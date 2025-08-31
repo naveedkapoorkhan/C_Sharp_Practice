@@ -47,3 +47,6 @@ c:\Excercise\{projectName}\ru-RU\data.txt
 
 
 ");
+
+Console.WriteLine("Github");
+
