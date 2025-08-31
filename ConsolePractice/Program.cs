@@ -1,52 +1,29 @@
-﻿
-//using System.Numerics;
-//using System.Security.Cryptography.X509Certificates;
+﻿//Learning objectives
+//After you complete this module, you'll be able to:
 
-//string StudentName,StudentCnic,StudentGraduationYear,StudentAdmissionYear;
-//string wow = @"Generating invoices for customer ""Contoso Corp"" ...
+//1.Perform mathematical operations on numeric values
 
-//Invoice: 1021           Complete!
-//Invoice: 1022           Complete!
+//2.Observe implicit type conversion between strings and numeric values
 
-//Output Directory:
-//c:\invoices";
+//3.Temporarily convert one data type into another
 
-// StudentName = @"'Usman'";
-// StudentCnic = "16101-8892132-5";
-//StudentGraduationYear = "30/09/1996";
-//StudentAdmissionYear = "30/09/2000";
-
-//string heart = "\u2665";     // ♥
-//string smile = "\u263A";     // ☺
-//string arrow = "\u2192";     // →
-//string alpha = "\u03B1";     // α
-//string greet = "naveed";
-//string message = $"Hi {greet}";
-//Console.WriteLine("\"StudentName\"\t\tStudentCnic\t\tAdmissionYear\t\tGraduationYear");
-//Console.WriteLine($"{StudentName}\t\t\t{StudentCnic}\t\t\"{StudentAdmissionYear}\"\t\t{StudentGraduationYear}");
-//Console.WriteLine(wow);
-//Console.WriteLine(heart);   // ♥
-//Console.WriteLine(smile);   // ☺
-//Console.WriteLine(arrow);   // →
-//Console.WriteLine(message);
-//View English output:
-//  c:\Exercise\ACME\data.txt
-
-//Посмотреть русский вывод:
-//  c:\Exercise\ACME\ru-RU\data.txt
-
-string projectName = "ACME";
-
-string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
-Console.WriteLine($@"View English output:
-c:\Excercise\{projectName}\data.txt
-
-Посмотреть русский вывод::
-c:\Excercise\{projectName}\ru-RU\data.txt
+//..............********************************......................//
+//1.Perform mathematical operations on numeric values
 
 
+//int x = 3 + 5;
+//Console.WriteLine(x);
+//string firstName = "Bob";
+//int widgetsSold = 7;
+//Console.WriteLine("{0}{1}{0}",firstName,widgetsSold,x);
+//decimal firstName = 12.12222222223333333322m;
+//float name = (float)firstName;
+//Console.WriteLine(name);
+//int value = 2;
+//value=(int)Math.Pow(value, 2);
+//Console.WriteLine(value);   // Output: 4
 
-");
-
-Console.WriteLine("Github");
-
+int fahrenheit = 94;
+decimal celsius = (fahrenheit - 32m) * 5.0m / 9.0m;
+Console.WriteLine($"THE TEMPRETURE IS:{celsius} celsius");   // Output: 34
+Console.WriteLine(5 / 10);
