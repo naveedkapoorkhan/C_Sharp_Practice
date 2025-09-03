@@ -85,3 +85,11 @@ Console.WriteLine(array1[1]);//get value
 
 //to find size of array use Length property
 Console.WriteLine($"size of array:{array1.Length}");
+
+//the most shorthand way used for array declaration and initialization
+Console.WriteLine("most shorthand way used for array declaration and initialization");
+int[] inventary = { 100, 200, 300, 400 };
+foreach (int item in inventary)
+{
+    Console.WriteLine(item);
+}
