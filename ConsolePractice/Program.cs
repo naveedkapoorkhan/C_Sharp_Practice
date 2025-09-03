@@ -82,3 +82,6 @@ array1[1]=20;//set value
 Console.WriteLine(array1[0]);//get value
 Console.WriteLine(array1[1]);//get value
                              //you can also use a loop to set and get value of array
+
+//to find size of array use Length property
+Console.WriteLine($"size of array:{array1.Length}");
