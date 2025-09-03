@@ -71,3 +71,14 @@ foreach (Car car in cars)
 {
     car.display();
 }
+
+
+//set and get value of array
+Console.WriteLine("set and get value of array");
+int[] array1 = new int[2];
+array1[0]=10;//set value
+array1[1]=20;//set value
+//now get the value
+Console.WriteLine(array1[0]);//get value
+Console.WriteLine(array1[1]);//get value
+                             //you can also use a loop to set and get value of array
