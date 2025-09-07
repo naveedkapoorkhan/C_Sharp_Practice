@@ -1,47 +1,125 @@
-﻿Random random = new Random();
-int seatNumber0 = random.Next(1, 100);
-int seatNumber1 = random.Next(1, 100);
-int seatNumber2 = random.Next(1, 100);
-int seatNumber3 = random.Next(1, 100);
-int seatNumber4 = random.Next(1, 100);
-////convert random numbers to string
-////string seatNumber0 = random.Next(1, 100).ToString("00");
-////string seatNumber1 = random.Next(1, 100).ToString("00");
-////string seatNumber2 = random.Next(1, 100).ToString("00");
-////string seatNumber3 = random.Next(1, 100).ToString("00");
-////string seatNumber4 = random.Next(1, 100).ToString("00");
+﻿//Declaration of a 2D Array
+//int[,] studentScore;
+//delaration of a 2D Array with size
+//studentScore = new int[3, 3];
+//declaration and initialization of a 2D Array with values
+//int[,] studentScore2 = new int[3, 3] { { 90, 80, 70 }, { 85, 75, 65 }, { 88, 78, 68 } };
+//declaration and initialization of a 2D Array with shorthand method
+//int[,] studentScore3 = { { 90, 80, 70 }, { 85, 75, 65 }, { 88, 78, 68 } }
+//;
+//string[] studentNames = { "John", "Jane", "Jim" };
 
-//// Array Declaration and Initialization
-int[] studentSeatNo;
-studentSeatNo = new int[5];
-//{1,44,3,4,5,6,78,87,87 };
-//string[] studentNames = new string[] { "John", "Jane", "Doe", "Alice", "Bob" };
+//studentScore3[1, 1] = 95; //Updating an element in a 2D Array
+//Accessing elements of a 2D Array
+//Console.WriteLine($"{studentScore3[1, 1]}");
+//Console.WriteLine($"{studentScore3[0, 0]}");
+//Console.WriteLine($"number of row :{studentScore3.GetLength(0)}");
+//Console.WriteLine($"number of column :{studentScore3.GetLength(1)}");
+//Iterating through a 2D Array using  for each loop
+//foreach (int score in studentScore3)
+//    {
+
+//        Console.Write($"  {score}  ");
+//    }
+//Uses arrays to store student names and assignment scores.
+//int[,] studentScore3 = { { 90, 80, 70 }, { 85, 75, 65 }, { 88, 78, 68 } }
+//;
+//string[] studentNames = { "John", "Jane", "Jim" };
+//Console.WriteLine($"StudentName\t\tGrade\t\tLetter Grade");
+
+//Iterating through a 2D Array using nested for loop
+//for (int i = 0; i < studentNames.Length; i++)
+//    {
+//        int sum = 0;
 
 
-//foreach (int seatNo in studentSeatNo)
+//        for (int j = 0; j < studentScore3.GetLength(0); j++)
+//        {
+//            // Console.WriteLine($"Assignment {j+1} : {studentScore3[i,j]} Marks ");
+//            sum = sum + studentScore3[i, j];
+
+
+//        }
+//        double average = sum / studentScore3.GetLength(0);
+
+
+
+//        if (average >= 90 && average <= 100)
+//        {
+//            Console.WriteLine($"{studentNames[i]}{average,10} A");
+
+//        }
+//        else if (average >= 80 && average < 90)
+//        {
+//            Console.WriteLine($"{studentNames[i]}   {average} B");
+//        }
+//        else if (average >= 70 && average < 80)
+//        {
+//            Console.WriteLine($"{studentNames[i]}   {average} C");
+//        }
+//        else if (average >= 60 && average < 70)
+//        {
+//            Console.WriteLine($"{studentNames[i]}   {average} D");
+//        }
+//        else
+//        {
+//            Console.WriteLine($"{studentNames[i]}   {average} F");
+//        }
+//    }
+
+//bool flag = true;
+//if (flag)
 //{
-//    Console.WriteLine($"Student Seat Number: {seatNo} to");
+//    int value = 10;
+//    Console.WriteLine($"Inside the code block: {value}");
 //}
 
-////assigning value by index manually
-////studentSeatNo[0] = 1;
-////studentSeatNo[1] = 11;
-////studentSeatNo[2] = 111;
-////studentSeatNo[3] = 1111;
-////studentSeatNo[4] = 11111;
-//// Assigning values to array elements while using random numbers
-studentSeatNo[0] = seatNumber0;
-studentSeatNo[1] = seatNumber1;
-studentSeatNo[2] = seatNumber2;
-studentSeatNo[3] = seatNumber3;
-studentSeatNo[4] = seatNumber4;
-Array.Sort(studentSeatNo);
-foreach (int seatNo in studentSeatNo)
-{
-    Console.WriteLine($"Student Seat Number: {seatNo}");
-}
+//Console.WriteLine($"Inside the code block: {value}");
+
+
+//bool flag = true;
+//int value = 0;
+
+//if (flag)
+//{
+//    Console.WriteLine($"Inside the code block: {value}");
+//}
+
+//value = 10;
+//Console.WriteLine($"Outside the code block: {value}");
 
 
 
+//Code sample 1
+//bool flag = true;
+//int value;
 
+//if (flag)
+//{
+//    value = 10;
+//    Console.WriteLine($"Inside the code block: {value}");
+//}
+
+//Console.WriteLine($"Outside the code block: {value}");
+
+//Code sample 2
+//int value;
+
+//if (false)
+//{
+//    value = 10;
+//    Console.WriteLine($"Inside the code block: {value}");
+//}
+
+//Console.WriteLine($"Outside the code block: {value}");
+//Code sample 2
+//int value;
+
+//if (true)
+//{
+//    value = 10;
+//    Console.WriteLine($"Inside the code block: {value}");
+//}
+
+//Console.WriteLine($"Outside the code block: {value}");
 
