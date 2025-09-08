@@ -123,3 +123,32 @@
 
 //Console.WriteLine($"Outside the code block: {value}");
 
+//bool flag = true;
+//if (flag)     
+//Console.WriteLine(flag);
+//Set contains 42
+//Total: 108
+
+
+//TAKE ARRAY FROM USER
+
+int n;
+Console.WriteLine("Enter the size of the array:");
+n= int.Parse(Console.ReadLine());
+int[] numbers = new int[n];
+
+//Console.WriteLine("Enter your numbers:");
+
+//int number=int.Parse(Console.ReadLine());
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.WriteLine("Enter your numbers:");
+    //Console.Write($"element {i + 1}: ");
+    int a = int.Parse(Console.ReadLine());
+    numbers[i] = a;
+}
+foreach (int number in numbers)
+{
+    Console.WriteLine(number);
+}
