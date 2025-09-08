@@ -1,154 +1,136 @@
-﻿//Declaration of a 2D Array
-//int[,] studentScore;
-//delaration of a 2D Array with size
-//studentScore = new int[3, 3];
-//declaration and initialization of a 2D Array with values
-//int[,] studentScore2 = new int[3, 3] { { 90, 80, 70 }, { 85, 75, 65 }, { 88, 78, 68 } };
-//declaration and initialization of a 2D Array with shorthand method
-//int[,] studentScore3 = { { 90, 80, 70 }, { 85, 75, 65 }, { 88, 78, 68 } }
-//;
-//string[] studentNames = { "John", "Jane", "Jim" };
+﻿
+/*Task 10 – Traffic Signal Simulation (10 marks)
 
-//studentScore3[1, 1] = 95; //Updating an element in a 2D Array
-//Accessing elements of a 2D Array
-//Console.WriteLine($"{studentScore3[1, 1]}");
-//Console.WriteLine($"{studentScore3[0, 0]}");
-//Console.WriteLine($"number of row :{studentScore3.GetLength(0)}");
-//Console.WriteLine($"number of column :{studentScore3.GetLength(1)}");
-//Iterating through a 2D Array using  for each loop
-//foreach (int score in studentScore3)
-//    {
+A traffic system tests signals randomly.
 
-//        Console.Write($"  {score}  ");
-//    }
-//Uses arrays to store student names and assignment scores.
-//int[,] studentScore3 = { { 90, 80, 70 }, { 85, 75, 65 }, { 88, 78, 68 } }
-//;
-//string[] studentNames = { "John", "Jane", "Jim" };
-//Console.WriteLine($"StudentName\t\tGrade\t\tLetter Grade");
+Generate random number 1–3:
 
-//Iterating through a 2D Array using nested for loop
-//for (int i = 0; i < studentNames.Length; i++)
-//    {
-//        int sum = 0;
+1 → Red → Stop
+
+2 → Yellow → Get Ready
+
+3 → Green → Go
+
+✅ Example Output:
+Signal = Yellow → Get Ready
+*/
+// Generate random number between 1 and 3
+Random random = new Random();
 
 
-//        for (int j = 0; j < studentScore3.GetLength(0); j++)
-//        {
-//            // Console.WriteLine($"Assignment {j+1} : {studentScore3[i,j]} Marks ");
-//            sum = sum + studentScore3[i, j];
+int trafficSignal = random.Next(1, 4);
 
 
-//        }
-//        double average = sum / studentScore3.GetLength(0);
-
-
-
-//        if (average >= 90 && average <= 100)
-//        {
-//            Console.WriteLine($"{studentNames[i]}{average,10} A");
-
-//        }
-//        else if (average >= 80 && average < 90)
-//        {
-//            Console.WriteLine($"{studentNames[i]}   {average} B");
-//        }
-//        else if (average >= 70 && average < 80)
-//        {
-//            Console.WriteLine($"{studentNames[i]}   {average} C");
-//        }
-//        else if (average >= 60 && average < 70)
-//        {
-//            Console.WriteLine($"{studentNames[i]}   {average} D");
-//        }
-//        else
-//        {
-//            Console.WriteLine($"{studentNames[i]}   {average} F");
-//        }
-//    }
-
-//bool flag = true;
-//if (flag)
-//{
-//    int value = 10;
-//    Console.WriteLine($"Inside the code block: {value}");
-//}
-
-//Console.WriteLine($"Inside the code block: {value}");
-
-
-//bool flag = true;
-//int value = 0;
-
-//if (flag)
-//{
-//    Console.WriteLine($"Inside the code block: {value}");
-//}
-
-//value = 10;
-//Console.WriteLine($"Outside the code block: {value}");
-
-
-
-//Code sample 1
-//bool flag = true;
-//int value;
-
-//if (flag)
-//{
-//    value = 10;
-//    Console.WriteLine($"Inside the code block: {value}");
-//}
-
-//Console.WriteLine($"Outside the code block: {value}");
-
-//Code sample 2
-//int value;
-
-//if (false)
-//{
-//    value = 10;
-//    Console.WriteLine($"Inside the code block: {value}");
-//}
-
-//Console.WriteLine($"Outside the code block: {value}");
-//Code sample 2
-//int value;
-
-//if (true)
-//{
-//    value = 10;
-//    Console.WriteLine($"Inside the code block: {value}");
-//}
-
-//Console.WriteLine($"Outside the code block: {value}");
-
-//bool flag = true;
-//if (flag)     
-//Console.WriteLine(flag);
-//Set contains 42
-//Total: 108
-
-
-//TAKE ARRAY FROM USER
-
-int n;
-Console.WriteLine("Enter the size of the array:");
-n= int.Parse(Console.ReadLine());
-int[] numbers = new int[n];
-
-//Console.WriteLine("Enter your numbers:");
-
-//int number=int.Parse(Console.ReadLine());
-
-for (int i = 0; i < numbers.Length; i++)
+// Print the signal and action
+// 1 → Red → Stop
+if (trafficSignal == 1)
 {
-    Console.WriteLine("Enter your numbers:");
-    //Console.Write($"element {i + 1}: ");
-    int a = int.Parse(Console.ReadLine());
-    numbers[i] = a;
+    Console.WriteLine("Signal = Red → Stop");
 }
-foreach (int number in numbers)
+// 2 → Yellow → Get Ready
+else if (trafficSignal == 2)
 {
-    Console.WriteLine(number);
+    Console.WriteLine("Signal = Yellow → Get Ready");
 }
+// 3 → Green → Go
+else
+{
+    Console.WriteLine("Signal = Green → Go");
+}
+
+/*
+Task 8 – Number Comparison (5 marks)
+A program compares two values.
+Generate two random numbers between 1–100.
+Print which one is greater or if they are equal.
+✅ Example Output:
+Numbers = 45 and 72 → 72 is greater
+ */
+
+// Generate two random numbers between 1 and 100
+Random rand = new Random();
+// Generate first number
+int number1 = rand.Next(1, 101);
+// Generate second number
+int number2 = rand.Next(1, 101);
+// Compare the numbers and print the result
+if (number1 > number2)
+{
+    Console.WriteLine($"Numbers = {number1} and {number2}  →  {number1} is greater");
+}
+// If second > first → "Second number is greater".
+else if (number2 > number1)
+{
+    Console.WriteLine($"Numbers = {number1} and {number2} → {number2} is greater");
+}
+// Else → "Both are equal".
+else
+{
+    Console.WriteLine($"Numbers = {number1} and {number2} → Both are equal");
+}
+
+/*
+ 10. Traffic Signal Simulation
+Ask user to enter a signal color (red, yellow, green).
+If red → "Stop".
+If yellow → "Get ready".
+If green → "Go".*/
+
+// Ask user to enter a signal color (red, yellow, green).
+Console.WriteLine("Please Enter Signal Color");
+// Read user input
+string signalColor = Console.ReadLine();
+//if user enter red in smaller its should also work but if user enter RED in capital its should also work because we are using ToLower() method
+if (signalColor.ToLower() == "red")
+{
+    Console.WriteLine("Stop");
+}
+else if (signalColor.ToLower() == "yellow")
+{
+    Console.WriteLine("Get ready");
+}
+else if (signalColor.ToLower() == "green")
+{
+    Console.WriteLine("Go");
+}
+else
+{
+    Console.WriteLine("Invalid color");
+}
+/*
+ 8. Number Comparison
+
+Input two numbers.
+
+If first > second → print "First number is greater".
+
+If second > first → "Second number is greater".
+
+Else → "Both are equal".
+*/
+
+
+// Ask user to enter first number
+Console.WriteLine("Please Enter Your First Number");
+int firstNumber = int.Parse(Console.ReadLine());
+// Ask user to enter second number
+Console.WriteLine("Please Enter Your Second Number");
+int secondNumber = int.Parse(Console.ReadLine());
+// Compare the numbers and print the result
+
+if (firstNumber > secondNumber)
+{
+    Console.WriteLine("First number is greater");
+}
+else if (secondNumber > firstNumber)
+{
+    Console.WriteLine("Second number is greater");
+}
+else
+{
+    Console.WriteLine("Both are equal");
+}
+
+
+
+
