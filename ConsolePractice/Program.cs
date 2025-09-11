@@ -586,7 +586,8 @@ Random attacks = new Random();
 int attacksByHero = 0;
 int attacksByMonster = 0;
 
-while (monsterHealthPoint >= 0 && heroHealthPoint >= 0)
+do
+
 {
     attacksByHero = attacks.Next(1, 10);
     attacksByMonster = attacks.Next(1, 10);
@@ -604,6 +605,6 @@ while (monsterHealthPoint >= 0 && heroHealthPoint >= 0)
    
 
 
-}
-string whoWin = heroHealthPoint > monsterHealthPoint ? "hero win" : "monster win";
+} while (monsterHealthPoint >= 0 && heroHealthPoint >= 0) ;
+    string whoWin = heroHealthPoint > monsterHealthPoint ? "hero win" : "monster win";
 Console.WriteLine($"who win the game\n{whoWin}");
