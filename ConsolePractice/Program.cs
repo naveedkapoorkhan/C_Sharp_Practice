@@ -583,22 +583,20 @@ int heroHealthPoint = 10;
 int monsterHealthPoint = 10;
 
 Random attacks = new Random();
-int attacksValue1 = attacks.Next(1, 10);
-int attacksValue2 = attacks.Next(1, 10);
-
-
-
-
+int attacksByHero = 0;
+int attacksByMonster = 0;
 
 while (monsterHealthPoint >= 0 && heroHealthPoint >= 0)
 {
-    heroHealthPoint -= attacksValue2;
+    attacksByHero = attacks.Next(1, 10);
+    attacksByMonster = attacks.Next(1, 10);
+    heroHealthPoint -= attacksByMonster;
 
    
-    Console.WriteLine($"hero was damaged and lost {attacksValue2} health and now has {heroHealthPoint} health.");
-    monsterHealthPoint -= attacksValue1;
+    Console.WriteLine($"hero was damaged By Monster by {attacksByMonster} health loss and now has presnt health in 10 is  {heroHealthPoint} health.");
+    monsterHealthPoint -= attacksByHero;
 
-    Console.WriteLine($"Monster was damaged and lost {attacksValue1} health and now has {monsterHealthPoint} health.");
+    Console.WriteLine($"Monster was damaged By hero by {attacksByHero} health loss and now has presnt health in 10 is  {monsterHealthPoint} health.");
 
 
     
