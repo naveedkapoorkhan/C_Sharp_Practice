@@ -579,31 +579,100 @@ using System.Threading;
 ///*
 ///
 ///*
-int heroHealthPoint = 10;
-int monsterHealthPoint = 10;
+//int heroHealthPoint = 10;
+//int monsterHealthPoint = 10;
 
-Random attacks = new Random();
-int attacksByHero = 0;
-int attacksByMonster = 0;
+//Random attacks = new Random();
+//int attacksByHero = 0;
+//int attacksByMonster = 0;
 
-for (; monsterHealthPoint >= 0 && heroHealthPoint >= 0;)
+//for (; monsterHealthPoint >= 0 && heroHealthPoint >= 0;)
+//{
+//    attacksByHero = attacks.Next(1, 10);
+//    attacksByMonster = attacks.Next(1, 10);
+//    heroHealthPoint -= attacksByMonster;
+
+
+//    Console.WriteLine($"hero was damaged By Monster by {attacksByMonster} health loss and now has presnt health in 10 is  {heroHealthPoint} health.");
+//    monsterHealthPoint -= attacksByHero;
+
+//    Console.WriteLine($"Monster was damaged By hero by {attacksByHero} health loss and now has presnt health in 10 is  {monsterHealthPoint} health.");
+
+//}
+//string whoWin = heroHealthPoint > monsterHealthPoint ? "hero win" : "monster win";
+//Console.WriteLine($"who win the game\n{whoWin}");
+
+//Console.WriteLine("enter your number");
+//string number = Console.ReadLine();
+//int Result = 0;
+//bool validNumber = false;
+//validNumber = int.TryParse(number, out int result);
+//Console.WriteLine($"validenumber:{validNumber}\n number is :{result}");
+//while (!validNumber)
+//{
+
+//    Console.WriteLine("enter your number");
+
+//}
+//int a = new int();   // same as int a = 0;
+// a = 5;
+//int b =new int();
+//b = a;
+//b = 6;
+
+//Console.WriteLine(a); // Output: 0
+//Console.WriteLine(b); // Output: 5
+
+// float x=2.0156f;
+//int y = (int)(x);
+//x = y;
+//Console.WriteLine(y);
+//Console.WriteLine(x);
+//int p=new int();
+//string o=p.ToString();
+//Console.WriteLine(o);
+
+//Console.WriteLine("Signed integral types:");
+
+//Console.WriteLine($"sbyte  : {sbyte.MinValue} to {sbyte.MaxValue}");
+//Console.WriteLine($"short  : {short.MinValue} to {short.MaxValue}");
+//Console.WriteLine($"int    : {int.MinValue} to {int.MaxValue}");
+//Console.WriteLine($"long   : {long.MinValue} to {long.MaxValue}");
+
+
+//Console.WriteLine("unSigned integral types:");
+//Console.WriteLine($"byte  : {byte.MinValue} to {byte.MaxValue}");
+//Console.WriteLine($"ushort  : {ushort.MinValue} to {ushort.MaxValue}");
+//Console.WriteLine($"uint    : {uint.MinValue} to {uint.MaxValue}");
+//Console.WriteLine($"ulong   : {ulong.MinValue} to {ulong.MaxValue}");
+
+//int[] data;
+//data = new int[5]; 
+//int[] data = new int[5];
+enum Day
 {
-    attacksByHero = attacks.Next(1, 10);
-    attacksByMonster = attacks.Next(1, 10);
-    heroHealthPoint -= attacksByMonster;
-
-   
-    Console.WriteLine($"hero was damaged By Monster by {attacksByMonster} health loss and now has presnt health in 10 is  {heroHealthPoint} health.");
-    monsterHealthPoint -= attacksByHero;
-
-    Console.WriteLine($"Monster was damaged By hero by {attacksByHero} health loss and now has presnt health in 10 is  {monsterHealthPoint} health.");
-
-
-    
-
-   
-
-
+    Sunday,    // 0
+    Monday,    // 1
+    Tuesday    // 2
 }
-string whoWin = heroHealthPoint > monsterHealthPoint ? "hero win" : "monster win";
-Console.WriteLine($"who win the game\n{whoWin}");
+
+class Program
+{
+    static void Main()
+    {
+        
+        Console.WriteLine(Day.Monday);
+        Day var;
+        var=Day.Sunday;
+        Day var1 = var;
+        var1 = Day.Tuesday;
+        //=Day.Monday;// Output: Monday
+        Console.WriteLine(var);
+        Console.WriteLine(var1);
+        // Console.WriteLine((int)today);  // Output: 1
+    }
+}
+
+
+
+
