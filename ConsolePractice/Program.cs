@@ -1,43 +1,16 @@
-﻿using System.Data;
+﻿int value1 = 11;
+decimal value2 = 6.2m;
+float value3 = 4.3f;
 
-string[] values = { "12.3", "45", "ABC", "11", "DEF" };
-//Create a looping structure that can be used to iterate through each string value in the array values.
-decimal result = 0m;
-decimal sum = 0m;
-string message="";
+// Your code here to set result1
+// Hint: You need to round the result to nearest integer (don't just truncate)
+int result1 = Convert.ToInt32(value1 / value2);
+Console.WriteLine($"Divide value1 by value2, display the result as an int: {result1}");
 
+// Your code here to set result2
+decimal result2 = value2 /(decimal) value3;
+Console.WriteLine($"Divide value2 by value3, display the result as a decimal: {result2}");
 
-//Complete the required code,
-//placing it within the array looping structure code block.
-for (int i = 0; i < values.Length; i++)
-{
-
-    bool x = decimal.TryParse(values[i], out result);
-
-    if (x)
-    {
-        sum = sum + result;
-
-    }
-
-    else
-    {
-        message = message + values[i];
-
-    }
-}
-
-Console.WriteLine($"Message: {message}");
-Console.WriteLine($"Total: {sum}");
-
-//It's necessary to implement the following business rules in your code logic:
-
-//Rule 1: If the value is alphabetical, concatenate it to form a message.
-
-
-//Rule 2: If the value is numeric, add it to the total.
-
-//Rule 3: The result should match the following output:
-//Message: ABCDEF
-//Total: 68.3
-
+// Your code here to set result3
+float result3 = value3 / (float)value1;
+Console.WriteLine($"Divide value3 by value1, display the result as a float: {result3}");
