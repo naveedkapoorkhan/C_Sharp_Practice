@@ -5,25 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-public class CAR
+public class Car
 {
-    private string carModel = "toyota";
-    public string CarModel
-    {
-        get { return carModel; }
-        //set 
-        //{ 
-        //     if(value== null)
-        //    {
-        //                        throw new ArgumentNullException("Car model cannot be null");
-        //    }
-        //    else
-        //    {
-        //        carModel = value;
-        //    }
-        //
-    }
-
-
+    public int A { get; init; }
+    public string B { get; set; }
 }
+
 
